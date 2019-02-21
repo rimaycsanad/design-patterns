@@ -30,7 +30,7 @@ public class Roles implements Cloneable {
     }
 
     @Override
-    public Roles clone() {
+    public Object clone() throws CloneNotSupportedException {
         List<String> tmpRoles = new ArrayList<>();
         for(String role : this.roles) {
             tmpRoles.add(role);
